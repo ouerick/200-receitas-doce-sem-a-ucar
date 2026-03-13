@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panetones Premium — O Futuro da Confeitaria</title>
+    <meta name="description" content="Domine a técnica revolucionária de Panetones Premium. Lucre até 300% com o método futurista de baixo custo.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link rel="preconnect" href="https://unpkg.com/">
+
+    <!-- Defer AOS Script -->
+    <script src="./index_files/aos.js.download" defer=""></script>
+    <link href="./index_files/css2" rel="stylesheet" media="all" onload="this.media=&#39;all&#39;">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@700&display=optional"
+            rel="stylesheet">
+    </noscript>
+
+    <!-- AOS Animation Library -->
+    <link href="./index_files/aos.css" rel="stylesheet" media="all" onload="this.media=&#39;all&#39;">
+    <noscript>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </noscript>
+
+    <style>
+        :root {
+            --bg-dark: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.05);
+            --primary: #FFD700;
+            /* Gold */
+            --secondary: #FF4500;
+            /* Neon Orange */
+            --accent: #00E5FF;
+            /* Cyan for futuristic touches */
+            --text-main: #ffffff;
+            --text-muted: #a0a0a0;
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --glow: 0 0 20px rgba(255, 215, 0, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        /* Background Animation */
+        .bg-orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(100px);
+            z-index: -1;
+            animation: float 10s infinite ease-in-out;
+            will-change: transform;
+            contain: strict;
+            pointer-events: none;
+            /* Optimization for CLS/Performance */
+        }
+
+
+        .orb-1 {
+            width: 400px;
+            height: 400px;
+            background: rgba(255, 69, 0, 0.15);
+            top: -100px;
+            left: -100px;
+        }
+
+        .orb-2 {
+            width: 500px;
+            height: 500px;
+            background: rgba(255, 215, 0, 0.1);
+            bottom: -100px;
+            right: -100px;
+            animation-delay: -5s;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(30px, 50px);
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 16px 0;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 24px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+
+        .btn-glow {
+            background: transparent;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            padding: 10px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-glow:hover {
+            background: var(--primary);
+            color: var(--bg-dark);
+            box-shadow: 0 0 30px var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+            position: relative;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: clamp(40px, 5vw, 72px);
+            line-height: 1.1;
+            margin-bottom: 24px;
+            min-height: 1.1em;
+            /* Reserve space for text */
+        }
+
+        .hero-text .highlight {
+            color: var(--primary);
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            max-width: 500px;
+        }
+
+        .hero-img-wrapper {
+            position: relative;
+        }
+
+        .hero-img {
+            width: 100%;
+            border-radius: 24px;
+            transform: perspective(1000px) rotateY(-10deg);
+            box-shadow: -20px 20px 60px rgba(0, 0, 0, 0.5);
+            border: 1px solid var(--glass-border);
+            transition: transform 0.5s;
+        }
+
+        .hero-img:hover {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+
+        .floating-badge {
+            position: absolute;
+            top: 20px;
+            right: -20px;
+            background: var(--secondary);
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-weight: 800;
+            transform: rotate(5deg);
+            box-shadow: 0 10px 30px rgba(255, 69, 0, 0.4);
+            animation: bounce 3s infinite ease-in-out;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(5deg);
+            }
+
+            50% {
+                transform: translateY(-10px) rotate(5deg);
+            }
+        }
+
+        /* Cards */
+        .glass-card {
+            background: var(--bg-card);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 32px;
+            transition: all 0.3s;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Problem Section */
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 48px;
+            margin-bottom: 60px;
+            background: linear-gradient(to bottom, #fff, #888);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+        }
+
+        .problem-item {
+            text-align: center;
+        }
+
+        .problem-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+            display: inline-block;
+            filter: drop-shadow(0 0 10px rgba(255, 69, 0, 0.5));
+        }
+
+        /* Secret Section */
+        .secret {
+            background: linear-gradient(180deg, transparent, rgba(255, 215, 0, 0.05), transparent);
+        }
+
+        .secret-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .secret-img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 24px;
+            margin-top: 40px;
+            box-shadow: 0 0 50px rgba(255, 215, 0, 0.1);
+        }
+
+        /* Modules */
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+        }
+
+        .module-card {
+            position: relative;
+            overflow: hidden;
+            height: 300px;
+            border-radius: 24px;
+            cursor: pointer;
+        }
+
+        .module-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .module-card:hover .module-bg {
+            transform: scale(1.1);
+        }
+
+        .module-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 32px;
+            background: linear-gradient(to top, black, transparent);
+        }
+
+        /* Testimonials */
+        .testimonial-slider {
+            display: flex;
+            gap: 24px;
+            overflow-x: auto;
+            padding-bottom: 40px;
+            scrollbar-width: none;
+        }
+
+        .testimonial-slider::-webkit-scrollbar {
+            display: none;
+        }
+
+        .testimonial-card {
+            min-width: 300px;
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            padding: 32px;
+            border-radius: 24px;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+
+        .user-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--primary);
+        }
+
+        /* Pricing */
+        .pricing-box {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
+            border: 1px solid var(--primary);
+            border-radius: 32px;
+            padding: 60px;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(transparent, var(--primary), transparent 30%);
+            animation: rotate 4s linear infinite;
+            opacity: 0.1;
+        }
+
+        @keyframes rotate {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .price-tag {
+            font-size: 80px;
+            font-weight: 800;
+            color: var(--primary);
+            text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+            margin: 24px 0;
+        }
+
+        .cta-button-large {
+            display: block;
+            width: 100%;
+            padding: 24px;
+            background: var(--primary);
+            color: #000;
+            font-weight: 800;
+            font-size: 24px;
+            text-decoration: none;
+            border-radius: 16px;
+            margin-top: 32px;
+            transition: transform 0.2s;
+            text-transform: uppercase;
+        }
+
+        .cta-button-large:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 50px var(--primary);
+        }
+
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px solid var(--glass-border);
+            margin-bottom: 16px;
+        }
+
+        .faq-question {
+            padding: 24px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .faq-answer {
+            padding: 0 24px 24px;
+            color: var(--text-muted);
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question {
+            color: var(--primary);
+        }
+
+        /* Pricing Grid Layout */
+        .pricing-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            max-width: 1100px;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        .pricing-box.premium {
+            border: 2px solid var(--primary);
+            position: relative;
+            z-index: 2;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(0, 0, 0, 0.8));
+        }
+
+        .pricing-box.basic {
+            border: 1px solid var(--glass-border);
+            background: var(--bg-card);
+            padding: 40px;
+            max-width: 100%;
+        }
+
+        .pricing-box.basic .price-tag {
+            font-size: 48px;
+            color: var(--text-main);
+            text-shadow: none;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 36px;
+            }
+
+            .hero-text p {
+                margin: 0 auto 40px;
+            }
+
+            /* Pricing Mobile Fixes */
+            .pricing-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .pricing-box,
+            .pricing-box.basic,
+            .pricing-box.premium {
+                padding: 24px;
+                width: 100%;
+            }
+
+            .pricing-box.premium {
+                transform: none;
+                order: -1;
+                /* Show premium first */
+            }
+
+            /* Mobile Header Fixes */
+            header .container {
+                padding: 0 16px;
+            }
+
+            .logo {
+                font-size: 18px;
+            }
+
+            .btn-glow {
+                padding: 8px 16px;
+                font-size: 13px;
+                white-space: nowrap;
+            }
+
+            /* Grid Fixes for small screens */
+            .modules-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .problem-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonial-card {
+                min-width: 260px;
+            }
+        }
+
+        /* Performance Optimization for Animations */
+        [data-aos] {
+            will-change: transform, opacity;
+        }
+    </style>
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="800" data-aos-delay="0">
+
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+
+    <header>
+        <div class="container nav-content">
+            <a href="https://receitaszero1.netlify.app/?ref=K104879403C#" class="logo">PANETONE.PRO</a>
+            <a href="https://go.hotmart.com/K104879403C?ap=502a" class="btn-glow">LUCRA AGORA</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text aos-init aos-animate" data-aos="fade-right">
+                <h1>Método Simples para Criar <span class="highlight">Panetones Premium</span></h1>
+                <p>Com a Técnica Panetone Premium de Baixo Custo™, você cria panetones <strong>artesanais, livres de
+                        conservantes</strong> e que parecem de padaria gourmet…
+                    gastando muito menos do que imagina. <strong>(Lucre Até 300% vendendo Sabor e Saúde)</strong></p>
+                <a href="https://go.hotmart.com/K104879403C?ap=502a" class="cta-button-large" style="width: auto; display: inline-block; font-size: 18px; padding: 16px 32px;">QUERO APRENDER
+                    AGORA</a>
+            </div>
+            <div class="hero-img-wrapper aos-init aos-animate" data-aos="fade-left">
+                <img src="./index_files/hero.webp" alt="Panetone Premium" class="hero-img" width="1024" height="807" fetchpriority="high">
+                <div class="floating-badge">
+                    LUCRO DE<br>300%
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title aos-init aos-animate" data-aos="fade-up">Você já tentou fazer panetone e aconteceu isso?</h2>
+            <div class="problem-grid">
+                <div class="glass-card problem-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <span class="problem-icon">🧱</span>
+                    <h3>A massa ficou pesada</h3>
+                    <p class="text-muted">Não cresceu ou embatumou.</p>
+                </div>
+                <div class="glass-card problem-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <span class="problem-icon">📉</span>
+                    <h3>Gastou caro</h3>
+                    <p class="text-muted">E não ficou com "cara de gourmet".</p>
+                </div>
+                <div class="glass-card problem-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                    <span class="problem-icon">🧪</span>
+                    <h3>Gosto Artificial</h3>
+                    <p class="text-muted">Cheio de conservantes. O cliente quer <strong>saúde e sabor caseiro</strong>.
+                    </p>
+                </div>
+                <div class="glass-card problem-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                    <span class="problem-icon">🚫</span>
+                    <h3>Prejuízo</h3>
+                    <p class="text-muted">Compararam com supermercado.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px; max-width: 800px; margin-left: auto; margin-right: auto;" data-aos="fade-up" class="aos-init">
+                <p style="font-size: 20px; color: var(--text-main);">Isso acontece por um motivo simples:</p>
+                <p style="font-size: 24px; font-weight: 700; color: var(--primary); margin-top: 10px;">👉 você está
+                    usando técnicas de receita caseira — não um método profissional.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section secret">
+        <div class="container secret-content">
+            <h2 class="section-title aos-init" data-aos="zoom-in">O Segredo Não Está nos Ingredientes Caros…</h2>
+            <p style="font-size: 24px; margin-bottom: 24px;">Está na <span style="color: var(--primary);">Forma Como
+                    Você Emulsiona e Aromatiza a Massa</span></p>
+            <p style="color: var(--text-muted); margin-bottom: 16px;">A maioria das pessoas acha que panetone gourmet
+                custa caro porque “os ingredientes são caros”. Mas isso é mito.</p>
+            <p style="color: var(--text-main); font-weight: 600; font-size: 18px; margin-bottom: 16px;">A verdade é:</p>
+            <p style="color: var(--text-muted); margin-bottom: 16px;">Textura premium, fofura e aroma profissional vêm
+                da técnica — não do preço da receita.</p>
+            <p style="color: var(--text-muted); margin-bottom: 16px;">Quando você domina emulsão, hidratação, ponto de
+                glúten e aromatização premium, qualquer receita barata vira um panetone gourmet.</p>
+            <p style="color: var(--text-muted); margin-bottom: 16px;">E é isso que diferencia o seu panetone:
+                <strong>Sabor Real e Zero Química</strong>. Enquanto o mercado vende produtos cheios de conservantes,
+                você vende saúde, frescor e exclusividade. Isso fideliza clientes e multiplica seu lucro.
+            </p>
+            <p style="color: var(--primary); font-weight: 700; font-size: 20px;">Com o Método Panetones Premium, você
+                faz tudo isso na cozinha da sua casa</p>
+            <img src="./index_files/texture_v2.png" alt="Textura Perfeita" class="secret-img aos-init" data-aos="flip-up" loading="lazy" width="600" height="400">
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title aos-init" data-aos="fade-up">Para Quem é Esse Curso?</h2>
+            <div class="problem-grid">
+                <div class="glass-card problem-item aos-init" data-aos="fade-up">
+                    <span class="problem-icon">🚀</span>
+                    <p class="text-muted">Está desempregado e busca uma saída <strong>IMEDIATA</strong>.</p>
+                </div>
+                <div class="glass-card problem-item aos-init" data-aos="fade-up" data-aos-delay="100">
+                    <span class="problem-icon">💰</span>
+                    <p class="text-muted">Quer uma renda extra <strong>sólida e consistente</strong>.</p>
+                </div>
+                <div class="glass-card problem-item aos-init" data-aos="fade-up" data-aos-delay="200">
+                    <span class="problem-icon">📈</span>
+                    <p class="text-muted">Sonha em empreender com <strong>baixo investimento e alto retorno</strong>.
+                    </p>
+                </div>
+                <div class="glass-card problem-item aos-init" data-aos="fade-up" data-aos-delay="300">
+                    <span class="problem-icon">🛡️</span>
+                    <p class="text-muted">Precisa de dinheiro rápido <strong>sem RISCOS</strong>.</p>
+                </div>
+                <div class="glass-card problem-item aos-init" data-aos="fade-up" data-aos-delay="400">
+                    <span class="problem-icon">🥗</span>
+                    <p class="text-muted">Quer vender para o público <strong>Fitness e Saudável</strong> (o que mais
+                        paga bem!).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title aos-init" data-aos="fade-up">O que você vai conseguir dominar:</h2>
+            <div class="problem-grid">
+                <div class="glass-card problem-item aos-init" data-aos="fade-up">
+                    <span class="problem-icon">🍞</span>
+                    <h3>Textura fofíssima 360°</h3>
+                </div>
+                <div class="glass-card problem-item aos-init" data-aos="fade-up" data-aos-delay="100">
+                    <span class="problem-icon">💧</span>
+                    <h3>Ponto de emulsão profissional</h3>
+                </div>
+                <div class="glass-card problem-item aos-init" data-aos="fade-up" data-aos-delay="200">
+                    <span class="problem-icon">👃</span>
+                    <h3>Aromatização que deixa cheiro de padaria gourmet</h3>
+                </div>
+                <div class="glass-card problem-item aos-init" data-aos="fade-up" data-aos-delay="300">
+                    <span class="problem-icon">🍫</span>
+                    <h3>Recheio firme e bem distribuído</h3>
+                </div>
+                <div class="glass-card problem-item aos-init" data-aos="fade-up" data-aos-delay="400">
+                    <span class="problem-icon">✨</span>
+                    <h3>Acabamento premium (parece panetone de R$ 90)</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title aos-init" data-aos="fade-up">Chega de Desculpas! Faça 10 mil ainda em 2025!</h2>
+            <div class="modules-grid">
+                <div class="module-card glass-card aos-init" data-aos="fade-up">
+                    <img src="./index_files/hero.webp" class="module-bg" alt="Receitas" loading="lazy" width="400" height="300">
+                    <div class="module-overlay">
+                        <h3>🍯 35 Receitas Lucrativas</h3>
+                        <p>Tradicionais, Gourmet e <strong>Opções Saudáveis</strong> que vendem muito.</p>
+                    </div>
+                </div>
+                <div class="module-card glass-card aos-init" data-aos="fade-up" data-aos-delay="100">
+                    <img src="./index_files/chocottone_v2.png" class="module-bg" alt="Trufados" loading="lazy" width="400" height="300">
+                    <div class="module-overlay">
+                        <h3>🍰 Panetones trufados</h3>
+                        <p>Os queridinhos e deliciosos</p>
+                    </div>
+                </div>
+                <div class="module-card glass-card aos-init" data-aos="fade-up" data-aos-delay="200">
+                    <img src="./index_files/chocottone_premium.png" class="module-bg" alt="Chocotones" loading="lazy" width="400" height="300">
+                    <div class="module-overlay">
+                        <h3>⏳ Chocotones PREMIUM</h3>
+                        <p>Receitas únicas que você não encontra em nenhum outro lugar.</p>
+                    </div>
+                </div>
+                <div class="module-card glass-card aos-init" data-aos="fade-up" data-aos-delay="300">
+                    <img src="./index_files/healthy_v2.png" class="module-bg" alt="Sem Glúten" loading="lazy" width="400" height="300">
+                    <div class="module-overlay">
+                        <h3>💪 Linha Saudável e Sem Glúten</h3>
+                        <p>Atenda clientes com restrições e cobre o dobro por isso.</p>
+                    </div>
+                </div>
+                <div class="module-card glass-card aos-init" data-aos="fade-up" data-aos-delay="400">
+                    <img src="./index_files/spreadsheet_costs.png" class="module-bg" alt="Planilha de Custos" loading="lazy" width="400" height="300">
+                    <div class="module-overlay">
+                        <h3>🎉 Planilha de Custos e Preço</h3>
+                        <p>O caminho para vender todos os dias</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 60px;" data-aos="zoom-in" class="aos-init">
+                <h3 style="margin-bottom: 24px;">Veja Algumas Das Receitas do Guia Já Prontas!</h3>
+                <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                    <img src="./index_files/hero.webp" style="width: 150px; height: 150px; object-fit: cover; border-radius: 12px; border: 1px solid var(--primary);" loading="lazy" width="150" height="150">
+                    <img src="./index_files/chocottone_v2.png" style="width: 150px; height: 150px; object-fit: cover; border-radius: 12px; border: 1px solid var(--primary);" loading="lazy" width="150" height="150">
+                    <img src="./index_files/healthy_v2.png" style="width: 150px; height: 150px; object-fit: cover; border-radius: 12px; border: 1px solid var(--primary);" loading="lazy" width="150" height="150">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">VEJA O DEPOIMENTO DE QUEM JÁ EXPERIMENTOU O GUIA!</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="user-info">
+                        <img src="./index_files/testimonial_1_1763677381383.png" alt="User" class="user-avatar" loading="lazy" width="50" height="50">
+                        <div>
+                            <h4>Maria Silva</h4>
+                            <span style="color: var(--primary);">★★★★★</span>
+                        </div>
+                    </div>
+                    <p>"Vendi tudo no natal passado! A técnica é infalível."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="user-info">
+                        <img src="./index_files/testimonial_2_1763677432950.png" alt="User" class="user-avatar" loading="lazy" width="50" height="50">
+                        <div>
+                            <h4>João Souza</h4>
+                            <span style="color: var(--primary);">★★★★★</span>
+                        </div>
+                    </div>
+                    <p>"Comecei vendendo a linha saudável na academia e hoje tiro R$ 3 mil extra só com isso!"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="user-info">
+                        <img src="./index_files/testimonial_3_1763677473309.png" alt="User" class="user-avatar" loading="lazy" width="50" height="50">
+                        <div>
+                            <h4>Ana Pereira</h4>
+                            <span style="color: var(--primary);">★★★★★</span>
+                        </div>
+                    </div>
+                    <p>"Investimento se pagou na primeira fornada."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title aos-init" data-aos="fade-up">BÔNUS PARA PRIMEIRA VISITA…</h2>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 10px;">5 Bônus exclusivos para quem
+                adquirir o guia nessa página</p>
+            <p style="text-align: center; color: var(--secondary); font-weight: 800; margin-bottom: 40px;">(ISSO TERMINA
+                HOJE!)</p>
+
+            <div class="problem-grid">
+                <div class="glass-card aos-init" data-aos="fade-up">
+                    <h3 style="color: var(--primary);">Bônus #01</h3>
+                    <h4>Panetone sem Glúten</h4>
+                    <p class="text-muted">De: <span style="text-decoration: line-through;">R$47,00</span></p>
+                    <p style="color: var(--accent); font-weight: 800;">Por: GRÁTIS</p>
+                </div>
+                <div class="glass-card aos-init" data-aos="fade-up" data-aos-delay="100">
+                    <h3 style="color: var(--primary);">Bônus #02</h3>
+                    <h4>Chocotones Exclusivos</h4>
+                    <p class="text-muted">De: <span style="text-decoration: line-through;">R$57,00</span></p>
+                    <p style="color: var(--accent); font-weight: 800;">Por: GRÁTIS</p>
+                </div>
+                <div class="glass-card aos-init" data-aos="fade-up" data-aos-delay="200">
+                    <h3 style="color: var(--primary);">Bônus #03</h3>
+                    <h4>Apostila de bolo de pote</h4>
+                    <p class="text-muted">De: <span style="text-decoration: line-through;">R$27,00</span></p>
+                    <p style="color: var(--accent); font-weight: 800;">Por: GRÁTIS</p>
+                </div>
+                <div class="glass-card aos-init" data-aos="fade-up" data-aos-delay="300">
+                    <h3 style="color: var(--primary);">Bônus #04</h3>
+                    <h4>Balas Gourmet</h4>
+                    <p class="text-muted">De: <span style="text-decoration: line-through;">R$37,00</span></p>
+                    <p style="color: var(--accent); font-weight: 800;">Por: GRÁTIS</p>
+                </div>
+                <div class="glass-card aos-init" data-aos="fade-up" data-aos-delay="300">
+                    <h3 style="color: var(--primary);">Bônus #05</h3>
+                    <h4>Planilha de custos e preo de venda</h4>
+                    <p class="text-muted">De: <span style="text-decoration: line-through;">R$37,00</span></p>
+                    <p style="color: var(--accent); font-weight: 800;">Por: GRÁTIS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="oferta">
+        <div class="container">
+            <h2 class="section-title aos-init" data-aos="fade-up">Chegou a Hora de Você dar uma Virada Financeira!</h2>
+
+            <div class="pricing-container">
+                <!-- Basic Plan -->
+                <div class="pricing-box basic aos-init" data-aos="fade-right">
+                    <h3 style="color: var(--text-main); margin-bottom: 20px; text-transform: uppercase;">Plano Básico
+                    </h3>
+                    <p style="color: var(--text-muted); margin-bottom: 20px;">Para quem quer apenas começar.</p>
+
+                    <ul style="text-align: left; list-style: none; margin-bottom: 32px; color: var(--text-muted);">
+                        <li style="margin-bottom: 12px;">✅ Curso Completo de Panetones</li>
+                        <li style="margin-bottom: 12px;">✅ Acesso Vitalício</li>
+                        <li style="margin-bottom: 12px; opacity: 0.5;">❌ Sem Bônus Exclusivos</li>
+                        <li style="margin-bottom: 12px; opacity: 0.5;">❌ Sem Planilhas</li>
+                        <li style="margin-bottom: 12px; opacity: 0.5;">❌ Sem Comunidade</li>
+                    </ul>
+
+                    <div style="margin: 30px 0;">
+                        <div class="price-tag">R$ 10,00</div>
+                    </div>
+
+                    <a href="https://receitaszero1.netlify.app/?ref=K104879403C#" class="btn-glow" style="display: block; text-align: center; width: 100%;">QUERO O
+                        BÁSICO</a>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="pricing-box premium aos-init" data-aos="zoom-in">
+                    <div class="floating-badge" style="position: absolute; top: 15px; right: 15px; transform: rotate(5deg); box-shadow: 0 5px 15px rgba(255,69,0,0.3); animation: bounce 3s infinite ease-in-out;">
+                        MAIS VENDIDO
+                    </div>
+                    <p style="text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; color: var(--text-muted); margin-top: 40px;">
+                        PLANO COMPLETO:</p>
+
+                    <div id="countdown" style="display: flex; gap: 20px; justify-content: center; margin: 20px 0; font-family: &#39;Space Grotesk&#39;, sans-serif;">
+                        <div style="text-align: center;"><span id="minutes" style="color: var(--primary); font-weight: 800; font-size: 40px;">13</span><br><span style="font-size: 14px; text-transform: uppercase;">Minutos</span></div>
+                        <div style="display: flex; align-items: center;"><span style="font-size: 40px; color: var(--glass-border);">:</span></div>
+                        <div style="text-align: center;"><span id="seconds" style="color: var(--primary); font-weight: 800; font-size: 40px;">30</span><br><span style="font-size: 14px; text-transform: uppercase;">Segundos</span></div>
+                    </div>
+
+                    <h3 style="color: var(--primary); margin-bottom: 20px;">*Oferta Por Tempo Limitado*</h3>
+                    <div style="color: var(--primary); font-size: 24px; margin-bottom: 20px;">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <p style="color: var(--text-muted); margin-bottom: 30px;">Esse é um produto 100% digital, você
+                        receberá
+                        o acesso por whatsapp e email.</p>
+
+                    <p style="color: var(--text-main); font-weight: 600; font-size: 20px; margin-bottom: 20px;">Apenas
+                        hoje,
+                        você receberá tudo isso:</p>
+
+                    <ul style="text-align: left; list-style: none; margin-bottom: 32px; color: var(--text-muted);">
+                        <li style="margin-bottom: 12px;">✅ Curso Completo de Panetones que vendem</li>
+                        <li style="margin-bottom: 12px;">✅ Acesso Vitalício</li>
+                        <li style="margin-bottom: 12px;">✅ 7 Dias de Garantia</li>
+                        <li style="margin-bottom: 12px;">✅ Bônus 01# Panettones sem Glúten</li>
+                        <li style="margin-bottom: 12px;">✅ Bônus 02# Chocotones deliciosos</li>
+                        <li style="margin-bottom: 12px;">✅ Bônus 03# Apostila de bolo de pote</li>
+                        <li style="margin-bottom: 12px;">✅ Bônus 04# Planilha de custos e preço de venda</li>
+                        <li style="margin-bottom: 12px;">✅ Bônus 05# Balas Gourmet</li>
+                        <li style="margin-bottom: 12px; font-weight: bold; color: var(--primary);">Valor Total: R$97
+                        </li>
+                    </ul>
+
+                    <div style="margin: 40px 0;">
+                        <p style="color: var(--text-main); font-size: 18px; margin-top: 10px;">Apenas hoje por:</p>
+                        <div class="price-tag">R$ 27,00</div>
+                    </div>
+
+                    <a href="https://go.hotmart.com/K104879403C?ap=502a" class="cta-button-large">SIM! QUERO ESSA SUPER
+                        OFERTA!</a>
+                    <p style="margin-top: 16px; font-size: 14px; color: var(--text-muted);">APROVEITE AGORA: VOCÊ NÃO
+                        ENCONTRARÁ ESTE PREÇO DEPOIS!</p>
+
+                    <div style="margin-top: 40px; border-top: 1px solid var(--glass-border); padding-top: 30px;">
+                        <h3 style="color: var(--primary); margin-bottom: 16px;">ESSE PRODUTO TEM GARANTIA INCONDICIONAL
+                            DE 7
+                            DIAS!</h3>
+                        <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 16px;">Você está sob
+                            proteção do
+                            Código de Defesa do Consumidor – LEI Nº 8.078, de 11 de setembro de 1990.</p>
+                        <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 16px;">Se por algum motivo
+                            você
+                            achar que não é para você ou não se adaptar, basta entrar em contato dentro do prazo de 7
+                            dias e
+                            solicitar o reembolso total do valor investido, sem precisar explicar nada.</p>
+                        <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 24px;">Você receberá de
+                            volta
+                            cada centavo que pagou.</p>
+                        <a href="https://go.hotmart.com/K104879403C?ap=502a" class="btn-glow" style="display: inline-block;">Libere Seu Acesso Com Garantia</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container" style="max-width: 800px;">
+            <h2 class="section-title">Dúvidas Frequentes</h2>
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle(&#39;active&#39;)">
+                    Como vou receber o curso? <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    O guia e todos os bônus são 100% digitais, e você recebe o acesso imediatamente por email após a
+                    compra.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle(&#39;active&#39;)">
+                    Vou pagar apenas 27 reais? <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Sim, é um pagamento único de R$27,00 sem mensalidades.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle(&#39;active&#39;)">
+                    Esse guia é adequado para quem não sabe cozinhar? <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Com certeza! O método é passo a passo, ideal para quem nunca fez panetone.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle(&#39;active&#39;)">
+                    Os ingredientes são caros ou difíceis de encontrar? <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Não! O foco do curso é justamente ensinar a fazer panetones premium com ingredientes acessíveis e
+                    fáceis de achar.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle(&#39;active&#39;)">
+                    Tem opções saudáveis ou para restrições? <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Sim! Você recebe um Bônus Exclusivo de Panetones Sem Glúten e aprende técnicas para criar versões
+                    mais saudáveis e artesanais, livres de conservantes industriais.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle(&#39;active&#39;)">
+                    Quanto tempo eu levo para preparar as receitas? <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    O tempo varia, mas o método é otimizado para ser prático e eficiente, mesmo para quem tem pouco
+                    tempo.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle(&#39;active&#39;)">
+                    Em quanto tempo recebo meu acesso? <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    O acesso é imediato assim que o pagamento for confirmado.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle(&#39;active&#39;)">
+                    O pagamento é seguro? <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Sim, utilizamos uma plataforma de pagamentos 100% segura e criptografada.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle(&#39;active&#39;)">
+                    Como funciona a garantia de 7 dias? <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Se você não gostar, basta nos enviar um email em até 7 dias e devolvemos 100% do seu dinheiro.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="padding: 40px 0; text-align: center; border-top: 1px solid var(--glass-border);">
+        <div class="container">
+            <p style="color: var(--text-muted); margin-bottom: 16px;">Este site não é afiliado ao Facebook ou a qualquer
+                entidade do Facebook. Após sair do Facebook, a responsabilidade não é deles, mas do nosso site.</p>
+            <p style="font-size: 14px; color: var(--text-muted);">sucessoemclick.com.br</p>
+            <p style="font-size: 14px; color: var(--text-muted); margin-top: 8px;">
+                <a href="https://receitaszero1.netlify.app/?ref=K104879403C#" style="color: var(--text-muted); text-decoration: none;">Política de Privacidade</a> |
+                <a href="https://receitaszero1.netlify.app/?ref=K104879403C#" style="color: var(--text-muted); text-decoration: none;">Termos de Uso</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('load', function () {
+            AOS.init({
+                duration: 800,
+                once: true,
+                disableMutationObserver: true, // Disables automatic mutations detection (advanced)
+                throttleDelay: 99, // Throttle delay in ms
+                debounceDelay: 50 // Debounce delay in ms
+            });
+        });
+
+        // Countdown Timer
+        let time = 15 * 60; // 15 minutes
+        const minutesEl = document.getElementById('minutes');
+        const secondsEl = document.getElementById('seconds');
+
+        setInterval(() => {
+            const minutes = Math.floor(time / 60);
+            let seconds = time % 60;
+
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+
+            minutesEl.innerHTML = minutes;
+            secondsEl.innerHTML = seconds;
+
+            if (time > 0) {
+                time--;
+            } else {
+                time = 15 * 60; // Reset
+            }
+        }, 1000);
+    </script>
+
+
+</body></html>
